@@ -1,39 +1,51 @@
-# Resolución de Evaluación Técnica 🚀
+# 🚀 Salesforce & Web Technical Assessment
 
 Este repositorio documenta paso a paso la resolución de una evaluación técnica práctica, abordando:
 
-Configuración de entorno de desarrollo
-Fundamentos del protocolo HTTP
-Consumo de APIs con Postman
-Plataforma Salesforce (Trailhead, objetos y automatizaciones)
-Integración mediante servicios REST
+- ⚙️ Configuración de entorno de desarrollo  
+- 🌐 Fundamentos del protocolo HTTP  
+- 🔌 Consumo de APIs con Postman  
+- ☁️ Plataforma Salesforce (Trailhead, objetos y automatizaciones)  
+- 🔄 Integración mediante servicios REST  
 
 El objetivo es demostrar no solo conocimientos técnicos, sino también buenas prácticas en documentación, organización y claridad en la comunicación.
 
 ## Motivación
 Este proyecto fue desarrollado con el propósito de:
 
-Demostrar habilidades técnicas en desarrollo web y Salesforce
-Aplicar conceptos fundamentales de arquitectura web
-Evidenciar buenas prácticas en control de versiones (Git)
-Presentar documentación clara y profesional
+- Demostrar habilidades técnicas en desarrollo web y Salesforce  
+- Aplicar conceptos fundamentales de arquitectura web  
+- Evidenciar buenas prácticas en control de versiones (Git)  
+- Presentar documentación clara y profesional  
 
-## Estado del Proyecto
+## 🚧 Estado del Proyecto
+
+🟡 En progreso — Resolviendo ejercicios de forma incremental
+
+![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+![Tech](https://img.shields.io/badge/stack-Salesforce%20%7C%20HTTP%20%7C%20Postman-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ## Estilo de Código
 Para el desarrollo de esta evaluación se utilizarán estándares de codificación limpios (Clean Code), con énfasis en la legibilidad, el uso correcto de tabulaciones y la estructura semántica de los archivos.
 
-## Screenshots
----------------------
+## 📸 Screenshots
 
-## Tecnologías y Herramientas
-* **IDE:** Visual Studio Code
-* **Version Control:** Git / Git Bash
+*(Pendiente — se agregarán evidencias de ejecución en Postman y Salesforce)*
+
+## 🛠️ Tecnologías y Herramientas
+
+- **IDE:** Visual Studio Code  
+- **Control de versiones:** Git / Git Bash  
+- **Herramientas:** Postman  
+- **Plataforma:** Salesforce  
+- **Lenguajes:** HTML, CSS, JavaScript, C#  
 
 ## Características
 * **Documentación profesional:** Siguiendo estándares de la comunidad.
 * **Control de versiones:** Historial de cambios detallado mediante Git.
 * **Versatilidad:** Preparado para trabajar con múltiples lenguajes (C#, JavaScript, HTML, CSS).
+
 
 ## Ejercicio 1: Configuración del Entorno de Desarrollo
 
