@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/images/logo.png" width="200"/>
+</p>
+
 # 🚀 Salesforce & Web Technical Assessment
 
 Este repositorio documenta paso a paso la resolución de una evaluación técnica práctica, abordando:
