@@ -42,6 +42,9 @@ Evidencia de la inicialización del repositorio y control de versiones utilizand
 
 <p align="center">
   <img src="assets/images/first-commit.png" width="700"/>
+  <img src="assets/images/GET.png" width="700"/>
+  <img src="assets/images/POST.png" width="700"/>
+  <img src="assets/images/GET-NEW.png" width="700"/>
 </p>
 
 ## 🛠️ Tecnologías y Herramientas
@@ -234,3 +237,105 @@ Indica el formato de los datos enviados en el body.
 - application/json
 - application/xml
 - multipart/form-data
+
+## Ejercicio 3: Consumo de API con Postman
+
+### 🔹 1. Request GET
+
+Se realizó una petición GET a la siguiente URL:
+https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts.json
+
+📌 Objetivo:
+Obtener la lista de contactos almacenados en el servidor.
+
+📸 Evidencia:
+<img src="assets/images/GET.png" width="700"/>
+
+📊 Resultado:
+Se obtuvo un objeto JSON con múltiples registros, donde cada contacto está identificado por una clave única generada automáticamente por el servidor.
+
+```json
+{
+    "-OjhsbYKoWnIHWs2C4iZ": {
+        "email": "Jose.Arredondo@procontacto.com.mx",
+        "name": "Jose Raul Arredondo"
+    },
+    "-OjmLYTGTfu9hlpaTaWG": {
+        "email": "leonardo.rodriguez@procontacto.com.mx",
+        "name": "Leonardo Rodriguez"
+    },
+    "-Ok62XXuiJVi-aMU7pb_": {
+        "email": "Luis.Hernandez@procontacto.com.mx",
+        "name": "Luis Alberto Hernandez"
+    },
+    "-OkEjJNIU0c4veNymKx7": {
+        "email": "tunombre.tuapellido@procontacto.com.mx",
+        "name": "Tu nombre"
+    },
+    "-OoT9hBxmd1fNHI4n22y": {
+        "email": "Paola.Prestado@procontacto.com.mx",
+        "name": "Martha Paola Prestado Ramirez"
+    }
+}
+```
+
+### 🔹 2. Request POST
+
+Se realizó una petición POST a la misma URL para crear un nuevo registro.
+
+📌 Body enviado:
+```json
+{
+  "name": "Eduardo Daniel Orozco Servin",
+  "email": "Eduardo.Orozco@procontacto.com.mx"
+}
+```
+
+📸 Evidencia:
+<img src="assets/images/POST.png" width="700"/>
+
+📊 Resultado:
+El servidor respondió con un código 200 OK, indicando que la operación fue exitosa y un identificador único generado automáticamente:
+```json
+{
+  "name": "-OrwTwm6n_irVHTAsTyh"
+}
+```
+
+### 🔹 3. Verificación (GET final)
+
+Se realizó nuevamente una petición GET para validar que el registro fue almacenado correctamente.
+
+📸 Evidencia:
+<img src="assets/images/GET-NEW.png" width="700"/>
+
+📊 Resultado:
+Se observa que el nuevo contacto aparece dentro de la colección con el ID previamente generado:
+```json
+{
+  "-OrwTwm6n_irVHTAsTyh": {
+    "email": "Eduardo.Orozco@procontacto.com.mx",
+    "name": "Eduardo Daniel Orozco Servin"
+  }
+}
+```
+
+📌 Conclusión:
+La API almacena correctamente los datos y asigna identificadores únicos.
+
+#### ¿Qué diferencias se observan entre las llamadas el punto 1 y 3?
+
+La principal diferencia entre ambas llamadas GET radica en el estado de los datos almacenados en el servidor.
+
+- **GET inicial:**  
+  Devuelve la lista de contactos existentes antes de realizar cualquier modificación.
+
+- **GET final**  
+  Refleja el estado actualizado de la colección después de ejecutar la petición POST.
+
+📌 Diferencia clave:  
+En el GET final se observa un nuevo registro que no estaba presente en la primera consulta, el cual incluye un identificador único generado automáticamente por el servidor.
+
+📌 Conclusión:  
+Esto demuestra que la operación POST fue exitosa y que los datos fueron persistidos correctamente en la base de datos.
+
