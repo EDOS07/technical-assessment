@@ -83,56 +83,54 @@ Un servidor HTTP es un sistema encargado de recibir, procesar y responder solici
 Su función principal es servir recursos como páginas web, archivos o APIs.
 
 🔄 Flujo de comunicación:
-* El cliente envía una petición HTTP
-* El servidor procesa la solicitud
-* Devuelve una respuesta con datos y un código de estado
+*   **El cliente envía una petición HTTP**
+*   **El servidor procesa la solicitud**
+*   **Devuelve una respuesta con datos y un código de estado**
 
 ### 🔁 2. ¿Qué son los verbos HTTP?
 
 Los verbos HTTP (o métodos) indican la acción que el cliente desea realizar sobre un recurso.
 
 📌 Métodos más comunes:
-* GET → Obtener información
-* POST → Enviar o crear datos
-* PUT → Actualizar un recurso completo
-* PATCH → Actualizar parcialmente
-* DELETE → Eliminar un recurso
+*   **GET** → Obtener información
+*   **POST** → Enviar o crear datos
+*   **PUT** → Actualizar un recurso completo
+*   **PATCH** → Actualizar parcialmente
+*   **DELETE** → Eliminar un recurso
 
 ### 📨 3. ¿Qué es un request y un response en una comunicación HTTP? ¿Qué son los headers?
  
 # Request (petición)
 
-Es el mensaje que envía el cliente al servidor. Contiene:
-
-* Método HTTP
-* URL
-* Headers
-* Body (opcional)
+📌 Es el mensaje que envía el cliente al servidor. Contiene:
+*   **Método HTTP**
+*   **URL**
+*   **Headers**
+*   **Body (opcional)**
 
 # Response (respuesta)
 
-Es la respuesta del servidor. Contiene:
-
-* Código de estado
-* Headers
-* Body (datos)
+📌 Es la respuesta del servidor. Contiene:
+*   **Código de estado**
+*   **Headers**
+*   **Body (datos)**
 
 # Headers
 
 Son metadatos que acompañan la petición o respuesta.
 
 📌 Ejemplos:
-* Tipo de contenido
-* Autenticación
-* Información del cliente
+*   **Tipo de contenido**
+*   **Autenticación**
+*   **Información del cliente**
 
 ### 🔗 4. ¿Qué es un queryString?
 
 Es una parte de la URL que permite enviar parámetros al servidor.
 
-* "?" inicia el query
-* "key=value" define parámetros
-* "&" separa múltiples valores
+*   **"?"** inicia el query
+*   **"key=value"** define parámetros
+*   **"&"** separa múltiples valores
 
 📌 Ejemplo: "https://api.com/users?name=eduardo&age=25"
 
@@ -141,14 +139,92 @@ Es una parte de la URL que permite enviar parámetros al servidor.
 Es el código que devuelve el servidor para indicar el resultado de una petición.
 
 📌 Categorías:
+*   **100 - 199** → Informativo
+*   **200 - 299** → Éxito
+*   **300 - 399** → Redirección
+*   **400 - 499** → Error del cliente
+*   **500 - 599** → Error del servidor
 
-* 100 - 199 → Informativo
-* 2xx → Éxito
-200 OK
-201 Created
-3xx → Redirección
-4xx → Error del cliente
-400 Bad Request
-404 Not Found
-5xx → Error del servidor
-500 Internal Server Error
+### 📦 6. ¿Cómo se envía la data en GET y POST?
+
+# GET
+- Los datos se envían en la URL (queryString)
+- Son visibles
+- Tienen limitación de tamaño
+
+📌 Ejemplo: "GET /users?name=eduardo"
+
+# POST 
+- Los datos se envían en el body
+- No son visibles en la URL
+- Permiten mayor cantidad de información
+
+### 🌍 7. ¿Qué verbo HTTP utiliza el navegador?
+
+El navegador utiliza principalmente:
+* **👉 GET**
+ Ya que solicita obtener el contenido de una página web.
+
+ ### 🧾 8. JSON vs XML
+
+ Son formatos utilizados para el intercambio de datos.
+
+# JSON
+
+Formato ligero y ampliamente utilizado:
+
+📌 Ejemplo:
+{
+  "name": "Eduardo",
+  "email": "eduardo@email.com"
+}
+
+# XML
+
+Formato más estructurado:
+
+📌 Ejemplo:
+<user>
+  <name>Eduardo</name>
+  <email>eduardo@email.com</email>
+</user>
+
+### 🧼 9. ¿Qué es SOAP?
+
+SOAP es un protocolo de comunicación basado en XML.
+
+**Características:**
+- Estructura estricta
+- Mayor seguridad
+- Más pesado
+- Utilizado en sistemas empresariales
+
+### 🔥 10. ¿Qué es RESTful?
+
+REST es un estilo arquitectónico para diseñar APIs.
+
+**Características:**
+- Usa HTTP
+- Basado en recursos (URLs)
+- Stateless (sin estado)
+- Ligero y flexible
+
+📌 Ejemplos:
+
+* GET /users
+* POST /users
+* DELETE /users/1
+
+### 🏷️ 11. Headers y Content-Type
+
+# Headers
+Los headers en un request proporcionan información adicional al servidor.
+
+# Content-Type
+Indica el formato de los datos enviados en el body.
+
+📌 Ejemplos:
+
+* application/json
+* application/xml
+* multipart/form-data
