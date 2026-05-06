@@ -53,9 +53,9 @@ Evidencia de la inicialización del repositorio y control de versiones utilizand
 - **Lenguajes:** HTML, CSS, JavaScript, C#  
 
 ## Características
-* **Documentación profesional:** Siguiendo estándares de la comunidad.
-* **Control de versiones:** Historial de cambios detallado mediante Git.
-* **Versatilidad:** Preparado para trabajar con múltiples lenguajes (C#, JavaScript, HTML, CSS).
+- **Documentación profesional:** Siguiendo estándares de la comunidad.
+- **Control de versiones:** Historial de cambios detallado mediante Git.
+- **Versatilidad:** Preparado para trabajar con múltiples lenguajes (C#, JavaScript, HTML, CSS).
 
 
 ## Ejercicio 1: Configuración del Entorno de Desarrollo
@@ -100,7 +100,7 @@ Los verbos HTTP (o métodos) indican la acción que el cliente desea realizar so
 
 ### 📨 3. ¿Qué es un request y un response en una comunicación HTTP? ¿Qué son los headers?
  
-# Request (petición)
+#### Request (petición)
 
 📌 Es el mensaje que envía el cliente al servidor. Contiene:
 *   **Método HTTP**
@@ -108,14 +108,14 @@ Los verbos HTTP (o métodos) indican la acción que el cliente desea realizar so
 *   **Headers**
 *   **Body (opcional)**
 
-# Response (respuesta)
+#### Response (respuesta)
 
 📌 Es la respuesta del servidor. Contiene:
 *   **Código de estado**
 *   **Headers**
 *   **Body (datos)**
 
-# Headers
+#### Headers
 
 Son metadatos que acompañan la petición o respuesta.
 
@@ -132,7 +132,8 @@ Es una parte de la URL que permite enviar parámetros al servidor.
 *   **"key=value"** define parámetros
 *   **"&"** separa múltiples valores
 
-📌 Ejemplo: "https://api.com/users?name=eduardo&age=25"
+📌 Ejemplo:
+https://api.com/users?name=eduardo&age=25
 
 ### 📊 5. ¿Qué es el responseCode?
 
@@ -147,47 +148,52 @@ Es el código que devuelve el servidor para indicar el resultado de una petició
 
 ### 📦 6. ¿Cómo se envía la data en GET y POST?
 
-# GET
+#### GET
 - Los datos se envían en la URL (queryString)
 - Son visibles
 - Tienen limitación de tamaño
 
-📌 Ejemplo: "GET /users?name=eduardo"
-
-# POST 
+#### POST 
 - Los datos se envían en el body
 - No son visibles en la URL
 - Permiten mayor cantidad de información
 
 ### 🌍 7. ¿Qué verbo HTTP utiliza el navegador?
 
-El navegador utiliza principalmente:
-* **👉 GET**
- Ya que solicita obtener el contenido de una página web.
+El navegador utiliza principalmente el método:
 
- ### 🧾 8. JSON vs XML
+👉 **GET**
 
- Son formatos utilizados para el intercambio de datos.
+Ya que solicita obtener el contenido de una página web.
 
-# JSON
+### 🧾 8. JSON vs XML
+
+Son formatos utilizados para el intercambio de datos.
+
+#### JSON
 
 Formato ligero y ampliamente utilizado:
 
 📌 Ejemplo:
+```json
 {
   "name": "Eduardo",
   "email": "eduardo@email.com"
 }
+```
 
-# XML
+#### XML
 
 Formato más estructurado:
 
 📌 Ejemplo:
+
+```xml
 <user>
   <name>Eduardo</name>
   <email>eduardo@email.com</email>
 </user>
+```
 
 ### 🧼 9. ¿Qué es SOAP?
 
@@ -199,7 +205,7 @@ SOAP es un protocolo de comunicación basado en XML.
 - Más pesado
 - Utilizado en sistemas empresariales
 
-### 🔥 10. ¿Qué es RESTful?
+### 🔥 10. ¿Qué es RESTfull?
 
 REST es un estilo arquitectónico para diseñar APIs.
 
@@ -217,14 +223,14 @@ REST es un estilo arquitectónico para diseñar APIs.
 
 ### 🏷️ 11. Headers y Content-Type
 
-# Headers
+#### Headers
 Los headers en un request proporcionan información adicional al servidor.
 
-# Content-Type
+#### Content-Type
 Indica el formato de los datos enviados en el body.
 
 📌 Ejemplos:
 
-* application/json
-* application/xml
-* multipart/form-data
+- application/json
+- application/xml
+- multipart/form-data
