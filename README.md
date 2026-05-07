@@ -547,4 +547,202 @@ Representa una solicitud de soporte o incidencia reportada por un cliente.
 ## 🔹 Diagrama UML
 
 El siguiente diagrama representa las relaciones principales entre los objetos estándar de Salesforce:
-<img src="assets/images/salesforce-uml.png" width="900"/>
+<img src="assets/images/salesforce-uml.png" width="700"/>
+
+# Ejercicio 6: Conceptos y Soluciones de Salesforce
+
+## 🔹 Soluciones de Salesforce
+
+### A. ¿Qué es Salesforce?
+Salesforce es una plataforma CRM (Customer Relationship Management) basada en la nube que permite gestionar procesos comerciales, atención al cliente, automatización, marketing e integraciones empresariales.
+
+### B. ¿Qué es Sales Cloud?
+Sales Cloud es la solución de Salesforce enfocada en ventas. Permite gestionar leads, oportunidades, cuentas, contactos y el pipeline comercial.
+
+### C. ¿Qué es Service Cloud?
+Service Cloud es la solución orientada al soporte y atención al cliente. Facilita la gestión de casos, automatización de soporte y canales de atención.
+
+### D. ¿Qué es Health Cloud?
+Health Cloud es una solución especializada para el sector salud que permite gestionar pacientes, historiales y procesos médicos de forma centralizada.
+
+### E. ¿Qué es Marketing Cloud?
+Marketing Cloud es la plataforma de automatización de marketing de Salesforce utilizada para campañas de correo, segmentación y comunicación multicanal.
+
+# 🔹 Funcionalidades de Salesforce
+
+### A. ¿Qué es un RecordType?
+Un RecordType permite definir diferentes procesos, layouts y comportamientos para un mismo objeto.
+
+### B. ¿Qué es un ReportType?
+Es la estructura utilizada para generar reportes en Salesforce, definiendo qué objetos y campos estarán disponibles.
+
+### C. ¿Qué es un Page Layout?
+Es la configuración visual que define cómo se muestran los campos, botones y secciones de un registro.
+
+### D. ¿Qué es un Compact Layout?
+Es un diseño compacto que muestra la información más importante de un registro en vistas rápidas y móviles.
+
+### E. ¿Qué es un Perfil?
+Un perfil define permisos y accesos de los usuarios dentro de Salesforce.
+
+### F. ¿Qué es un Rol?
+Un rol define la jerarquía organizacional y la visibilidad de registros entre usuarios.
+
+### G. ¿Qué es una Validation Rule?
+Es una regla que valida datos antes de guardar un registro para garantizar integridad y consistencia.
+
+### H. ¿Qué diferencia hay entre una relación Master Detail y Lookup?
+- Master Detail:
+  - Relación dependiente
+  - Hereda permisos
+  - El registro hijo depende del padre
+
+- Lookup:
+  - Relación flexible
+  - Los objetos pueden existir independientemente
+
+### I. ¿Qué es un Sandbox?
+Es un entorno de pruebas de Salesforce utilizado para desarrollo y testing sin afectar producción.
+
+### J. ¿Qué es un ChangeSet?
+Es una herramienta utilizada para desplegar configuraciones y desarrollos entre entornos Salesforce.
+
+### K. ¿Para qué sirve el Import Wizard de Salesforce?
+Permite importar datos masivamente desde archivos como CSV hacia objetos de Salesforce.
+
+### L. ¿Para qué sirve la funcionalidad Web to Lead?
+Permite capturar leads desde formularios web y almacenarlos automáticamente en Salesforce.
+
+### M. ¿Para qué sirve la funcionalidad Web to Case?
+Permite crear casos automáticamente desde formularios de soporte web.
+
+### N. ¿Para qué sirve la funcionalidad Omnichannel?
+Permite distribuir automáticamente casos, chats o tareas entre agentes disponibles.
+
+### O. ¿Para qué sirve la funcionalidad Chatter?
+Chatter es una herramienta de colaboración interna similar a una red social corporativa.
+
+# 🔹 Conceptos Generales
+
+### A. ¿Qué significa SaaS?
+SaaS (Software as a Service) es un modelo donde el software se consume desde internet sin instalación local.
+
+### B. ¿Salesforce es SaaS?
+Sí. Salesforce es una plataforma SaaS basada en la nube.
+
+### C. ¿Qué significa que una solución sea Cloud?
+Significa que la aplicación y los datos se alojan en servidores remotos accesibles mediante internet.
+
+### D. ¿Qué significa que una solución sea On-Premise?
+Significa que el software y la infraestructura se alojan localmente dentro de la empresa.
+
+### E. ¿Qué es un pipeline de ventas?
+Es la representación de las etapas de un proceso comercial desde un lead hasta el cierre de venta.
+
+### F. ¿Qué es un funnel de ventas?
+Es un modelo que representa cómo disminuyen los prospectos en cada etapa del proceso de ventas.
+
+### G. ¿Qué significa Customer Experience?
+Es la experiencia total que tiene un cliente al interactuar con una empresa o servicio.
+
+### H. ¿Qué significa omnicanalidad?
+Es la integración de múltiples canales de comunicación ofreciendo una experiencia unificada al cliente.
+
+### I. ¿Qué significa que un negocio sea B2B y B2C? ¿Qué es un KPI?
+- B2B: negocio de empresa a empresa.
+- B2C: negocio de empresa a consumidor final.
+- KPI: indicador utilizado para medir desempeño y resultados.
+
+### J. ¿Qué es una API y en qué se diferencia de una REST API?
+Una API permite la comunicación entre sistemas.  
+Una REST API es un tipo de API que utiliza HTTP y principios REST.
+
+### K. ¿Qué es un Proceso Batch?
+Es un proceso automatizado que ejecuta tareas masivas o programadas en segundo plano.
+
+### L. ¿Qué es Kanban?
+Kanban es una metodología visual para gestionar tareas y flujos de trabajo.
+
+### M. ¿Qué es un ERP?
+ERP (Enterprise Resource Planning) es un sistema utilizado para gestionar procesos empresariales integrados.
+
+### N. ¿Salesforce es un ERP?
+No exactamente. Salesforce es principalmente un CRM, aunque puede integrarse con sistemas ERP.
+
+# Ejercicio 7: Integración Salesforce con Servicio REST
+
+## 🔹 Objetivo
+
+Desarrollar una integración entre Salesforce y un servicio REST externo utilizando Apex y triggers.
+
+La funcionalidad consiste en:
+
+1. Obtener un identificador único desde una API REST.
+2. Crear un campo personalizado en el objeto Contact.
+3. Consumir el servicio REST desde Salesforce.
+4. Actualizar automáticamente el correo electrónico del contacto utilizando los datos obtenidos desde la API.
+
+# 🔹 A. Obtención del ID mediante GET en Postman
+
+Se realizó una petición GET al siguiente endpoint:
+
+```http
+GET https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts.json
+```
+
+📌 Objetivo:
+Obtener los identificadores únicos de los contactos almacenados en Firebase.
+
+📸 Evidencia:
+<img src="assets/images/GET-ID.png" width="700"/>
+
+📊 Resultado:
+```JSON
+{
+  "-OrwTwm6n_irVHTAsTyh": {
+    "email": "Eduardo.Orozco@procontacto.com.mx",
+    "name": "Eduardo Daniel Orozco Servin"
+  }
+}
+```
+
+📌 ID utilizado para pruebas:
+-OrwTwm6n_irVHTAsTyh
+
+# 🔹 B. Creación del campo personalizado en Contact
+
+Se creó un campo personalizado en el objeto Contact con las siguientes características:
+| Propiedad | Valor            |
+| --------- | ---------------- |
+| Label     | idprocontacto    |
+| API Name  | idprocontacto__c |
+| Tipo      | Text             |
+| Longitud  | 255              |
+
+📸 Evidencia:
+<img src="assets/images/ejercicio7contac.png" width="700"/>
+
+# 🔹 C. Desarrollo del Trigger y Servicio Apex
+
+Para implementar la integración se desarrolló un Trigger sobre el objeto Contact.
+
+📌 Funcionamiento:
+
+ - Cuando un contacto es creado o actualizado
+ - Y el campo idprocontacto__c contiene un valor
+ - Salesforce realiza una consulta REST hacia Firebase
+ - Obtiene la información del contacto
+ - Actualiza automáticamente el campo Email del registro
+
+ 📌 Consideración técnica importante
+
+Los Triggers de Salesforce no pueden realizar llamadas HTTP externas directamente.
+
+Por esta razón, se implementó un método asíncrono utilizando:
+@future(callout=true)
+Esto permite ejecutar el callout REST en segundo plano cumpliendo las restricciones de la plataforma Salesforce.
+
+📸 Evidencia:
+<img src="assets/images/ejercicio7testantes.png" width="700"/>
+<img src="assets/images/ejercicio7codigo.png" width="700"/>
+<img src="assets/images/ejercicio7testdespues.png" width="700"/>
