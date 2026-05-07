@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/Logo.png" width="200"/>
+  <img src="assets/images/Logo.png" width="450"/>
 </p>
 
 # 🚀 Salesforce & Web Technical Assessment
@@ -24,23 +24,34 @@ Este proyecto fue desarrollado con el propósito de:
 
 ## 🚧 Estado del Proyecto
 
-🟡 En progreso — Resolviendo ejercicios de forma incremental
-
-![Status](https://img.shields.io/badge/status-in%20progress-yellow)
-![Tech](https://img.shields.io/badge/stack-Salesforce%20%7C%20HTTP%20%7C%20Postman-blue)
+![Status](https://img.shields.io/badge/status-completed-brightgreen)
+![Salesforce](https://img.shields.io/badge/Salesforce-Apex-blue)
+![API](https://img.shields.io/badge/API-REST-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## Estilo de Código
 Para el desarrollo de esta evaluación se utilizarán estándares de codificación limpios (Clean Code), con énfasis en la legibilidad, el uso correcto de tabulaciones y la estructura semántica de los archivos.
 
+## 📑 Contenido
+
+- [Ejercicio 1 - Configuración del entorno](#ejercicio-1-configuración-del-entorno-de-desarrollo)
+- [Ejercicio 2 - HTTP y estándares web](#ejercicio-2-protocolo-http-y-estándares-web)
+- [Ejercicio 3 - Consumo de API con Postman](#ejercicio-3-consumo-de-api-con-postman)
+- [Ejercicio 4 - Trailhead y Salesforce](#ejercicio-4-trailhead-y-plataforma-salesforce)
+- [Ejercicio 5 - Objetos estándar Salesforce](#ejercicio-5-objetos-estándar-de-salesforce-y-relaciones)
+- [Ejercicio 6 - Conceptos Salesforce](#ejercicio-6-conceptos-y-soluciones-de-salesforce)
+- [Ejercicio 7 - Integración REST con Apex](#ejercicio-7-integración-salesforce-con-servicio-rest)
+
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="assets/images/first-commit.png" width="700"/>
-  <img src="assets/images/GET.png" width="700"/>
-  <img src="assets/images/POST.png" width="700"/>
-  <img src="assets/images/GET_NEW.png" width="700"/>  
-  <img src="assets/images/SalesForce_insignias10.png" width="700"/>
+  <img src="assets/images/GET.png" width="350"/>
+  <img src="assets/images/POST.png" width="350"/>
+</p>
+
+<p align="center">
+  <img src="assets/images/GET_NEW.png" width="350"/>
+  <img src="assets/images/SalesForce_insignias10.png" width="350"/>
 </p>
 
 ## 🛠️ Tecnologías y Herramientas
@@ -204,7 +215,7 @@ SOAP es un protocolo de comunicación basado en XML.
 - Más pesado
 - Utilizado en sistemas empresariales
 
-### 🔥 10. ¿Qué es RESTfull?
+### 🔥 10. ¿Qué es RESTful?
 
 REST es un estilo arquitectónico para diseñar APIs.
 
@@ -245,7 +256,7 @@ https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts.json
 Obtener la lista de contactos almacenados en el servidor.
 
 📸 Evidencia:
-<img src="assets/images/GET.png" width="700"/>
+<img src="assets/images/GET.png" width="450"/>
 
 📊 Resultado:
 Se obtuvo un objeto JSON con múltiples registros, donde cada contacto está identificado por una clave única generada automáticamente por el servidor.
@@ -288,7 +299,7 @@ Se realizó una petición POST a la misma URL para crear un nuevo registro.
 ```
 
 📸 Evidencia:
-<img src="assets/images/POST.png" width="700"/>
+<img src="assets/images/POST.png" width="450"/>
 
 📊 Resultado:
 El servidor respondió con un código 200 OK, indicando que la operación fue exitosa y un identificador único generado automáticamente:
@@ -303,7 +314,7 @@ El servidor respondió con un código 200 OK, indicando que la operación fue ex
 Se realizó nuevamente una petición GET para validar que el registro fue almacenado correctamente.
 
 📸 Evidencia:
-<img src="assets/images/GET_NEW.png" width="700"/>
+<img src="assets/images/GET_NEW.png" width="450"/>
 
 📊 Resultado:
 Se observa que el nuevo contacto aparece dentro de la colección con el ID previamente generado:
@@ -360,16 +371,16 @@ Estos módulos cubren conceptos clave como la estructura de datos en Salesforce,
 
 ### 🔹 Evidencia
 
-<img src="assets/images/SalesForce_1.png" width="700"/>
-<img src="assets/images/AgentforceStudio_2.png" width="700"/>
-<img src="assets/images/AgentforceStudio_3.png" width="700"/>
-<img src="assets/images/SalesForce_fundamentoscompletos4.png" width="700"/>
-<img src="assets/images/SalesForce_Apex&NET5.png" width="700"/>
-<img src="assets/images/SalesForce_ApexClase6.png" width="700"/>
-<img src="assets/images/SalesForce_modelosdatos7.png" width="700"/>
-<img src="assets/images/SalesForce_fundamentosbasededatos8.png" width="700"/>
-<img src="assets/images/SalesForce_FundamentosbasededatosdeApex9.png" width="700"/>
-<img src="assets/images/SalesForce_insignias10.png" width="700"/>
+<img src="assets/images/SalesForce_1.png" width="450"/>
+<img src="assets/images/AgentforceStudio_2.png" width="450"/>
+<img src="assets/images/AgentforceStudio_3.png" width="450"/>
+<img src="assets/images/SalesForce_fundamentoscompletos4.png" width="450"/>
+<img src="assets/images/SalesForce_Apex&NET5.png" width="450"/>
+<img src="assets/images/SalesForce_ApexClase6.png" width="450"/>
+<img src="assets/images/SalesForce_modelosdatos7.png" width="450"/>
+<img src="assets/images/SalesForce_fundamentosbasededatos8.png" width="450"/>
+<img src="assets/images/SalesForce_FundamentosbasededatosdeApex9.png" width="450"/>
+<img src="assets/images/SalesForce_insignias10.png" width="450"/>
 
 ### 🔹 Perfil público
 
@@ -547,7 +558,7 @@ Representa una solicitud de soporte o incidencia reportada por un cliente.
 ## 🔹 Diagrama UML
 
 El siguiente diagrama representa las relaciones principales entre los objetos estándar de Salesforce:
-<img src="assets/images/salesforce-uml.png" width="700"/>
+<img src="assets/images/salesforce-uml.png" width="450"/>
 
 # Ejercicio 6: Conceptos y Soluciones de Salesforce
 
@@ -694,7 +705,7 @@ GET https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts.json
 Obtener los identificadores únicos de los contactos almacenados en Firebase.
 
 📸 Evidencia:
-<img src="assets/images/GET-ID.png" width="700"/>
+<img src="assets/images/GET-ID.png" width="450"/>
 
 📊 Resultado:
 ```JSON
@@ -720,19 +731,26 @@ Se creó un campo personalizado en el objeto Contact con las siguientes caracter
 | Longitud  | 255              |
 
 📸 Evidencia:
-<img src="assets/images/ejercicio7contac.png" width="700"/>
+<img src="assets/images/ejercicio7contac.png" width="450"/>
 
 # 🔹 C. Desarrollo del Trigger y Servicio Apex
 
 Para implementar la integración se desarrolló un Trigger sobre el objeto Contact.
 
-📌 Funcionamiento:
+## 💻 Código Fuente
 
- - Cuando un contacto es creado o actualizado
- - Y el campo idprocontacto__c contiene un valor
- - Salesforce realiza una consulta REST hacia Firebase
- - Obtiene la información del contacto
- - Actualiza automáticamente el campo Email del registro
+El código Apex desarrollado para la integración se encuentra dentro del repositorio:
+
+- `apex/ContactTrigger.trigger`
+- `apex/ContactService.cls`
+
+📌 Funcionalidades implementadas:
+- Trigger sobre Contact
+- Integración REST con Firebase
+- Consumo HTTP GET
+- Procesamiento JSON
+- Actualización automática de Email
+- Método asíncrono usando `@future(callout=true)`
 
  📌 Consideración técnica importante
 
@@ -743,6 +761,41 @@ Por esta razón, se implementó un método asíncrono utilizando:
 Esto permite ejecutar el callout REST en segundo plano cumpliendo las restricciones de la plataforma Salesforce.
 
 📸 Evidencia:
-<img src="assets/images/ejercicio7testantes.png" width="700"/>
-<img src="assets/images/ejercicio7codigo.png" width="700"/>
-<img src="assets/images/ejercicio7testdespues.png" width="700"/>
+<img src="assets/images/ejercicio7testantes.png" width="450"/>
+<img src="assets/images/ejercicio7codigo.png" width="450"/>
+<img src="assets/images/ejercicio7testdespues.png" width="450"/>
+
+# 📌 Conclusión General
+
+Durante esta evaluación técnica se trabajó con conceptos fundamentales de desarrollo web, consumo de APIs, protocolos HTTP y la plataforma Salesforce.
+
+Además de los conocimientos técnicos, se aplicaron buenas prácticas de documentación, control de versiones e integración entre sistemas mediante servicios REST y Apex.
+
+El proyecto permitió fortalecer habilidades relacionadas con:
+- Integración de servicios
+- Desarrollo sobre Salesforce
+- Modelado de datos
+- Automatización mediante Apex
+- Consumo de APIs REST
+- Documentación técnica profesional
+
+# Créditos
+
+* Pro Contacto: Por el material y la guía de evaluación.
+* Salesforce: Documentación oficial y Trailhead.
+
+## 👨‍💻 Autor
+
+Eduardo Daniel Orozco Servin
+
+📌 Tecnologías:
+- Salesforce
+- Apex
+- REST APIs
+- Postman
+- Git & GitHub
+- Desarrollo Web
+
+## 📄 LicenseRESTful
+
+MIT © Eduardo Daniel Orozco Servin
