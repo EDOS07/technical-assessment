@@ -1,0 +1,11 @@
+trigger AccountAddressTrigger on Account (before insert, before update) {
+    // Los triggers de tipo 'before' permiten modificar campos del mismo registro
+    // sin necesidad de una sentencia DML adicional.
+    for (Account a : Trigger.new) {
+        // Verificamos si la casilla está marcada y si existe un código postal de facturación
+        if (a.Match_Billing_Address__c == true && a.BillingPostalCode != null) {
+            // Igualamos el código postal de envío al de facturación
+            a.ShippingPostalCode = a.BillingPostalCode;
+        }
+    }
+}

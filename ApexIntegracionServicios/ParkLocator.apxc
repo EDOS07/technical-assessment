@@ -1,0 +1,11 @@
+public class ParkLocator {
+    public static List<String> country(String countryName) {
+        // Instanciamos el puerto generado por el WSDL
+        ParkService.ParksImplPort parkService = new ParkService.ParksImplPort();
+        
+        // Llamamos al método del servicio web externo
+        List<String> parkNames = parkService.byCountry(countryName);
+        
+        return parkNames;
+    }
+}

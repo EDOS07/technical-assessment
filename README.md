@@ -35,16 +35,21 @@ Para el desarrollo de esta evaluación se utilizarán estándares de codificaci�
 
 ## 📸 Screenshots
 
-*(Pendiente — se agregarán evidencias de ejecución en Postman y Salesforce)*
-### 🔹 Primer commit en GitHub
-
-Evidencia de la inicialización del repositorio y control de versiones utilizando Git.
-
 <p align="center">
   <img src="assets/images/first-commit.png" width="700"/>
   <img src="assets/images/GET.png" width="700"/>
   <img src="assets/images/POST.png" width="700"/>
-  <img src="assets/images/GET-NEW.png" width="700"/>
+  <img src="assets/images/GET_NEW.png" width="700"/>
+  <img src="assets/images/SalesForce_1.png" width="700"/>
+<img src="assets/images/AgentforceStudio_2.png" width="700"/>
+<img src="assets/images/AgentforceStudio_3.png" width="700"/>
+<img src="assets/images/SalesForce_fundamentoscompletos4.png" width="700"/>
+<img src="assets/images/SalesForce_Apex&NET5.png" width="700"/>
+<img src="assets/images/SalesForce_ApexClase6.png" width="700"/>
+<img src="assets/images/SalesForce_modelosdatos7.png" width="700"/>
+<img src="assets/images/SalesForce_fundamentosbasededatos8.png" width="700"/>
+<img src="assets/images/SalesForce_FundamentosbasededatosdeApex9.png" width="700"/>
+<img src="assets/images/SalesForce_insignias10.png" width="700"/>
 </p>
 
 ## 🛠️ Tecnologías y Herramientas
@@ -307,7 +312,7 @@ El servidor respondió con un código 200 OK, indicando que la operación fue ex
 Se realizó nuevamente una petición GET para validar que el registro fue almacenado correctamente.
 
 📸 Evidencia:
-<img src="assets/images/GET-NEW.png" width="700"/>
+<img src="assets/images/GET_NEW.png" width="700"/>
 
 📊 Resultado:
 Se observa que el nuevo contacto aparece dentro de la colección con el ID previamente generado:
@@ -339,3 +344,48 @@ En el GET final se observa un nuevo registro que no estaba presente en la primer
 📌 Conclusión:  
 Esto demuestra que la operación POST fue exitosa y que los datos fueron persistidos correctamente en la base de datos.
 
+## Ejercicio 4: Trailhead y Plataforma Salesforce
+
+### 🔹 Configuración de Trailhead
+
+Se configuró el entorno de aprendizaje en Trailhead, la plataforma oficial de Salesforce para el desarrollo de habilidades mediante módulos prácticos.
+
+📌 Objetivo:  
+Adquirir conocimientos sobre la plataforma Salesforce, su modelo de datos y capacidades de automatización.
+
+### 🔹 Módulos completados
+
+Se completaron los siguientes módulos dentro de Trailhead:
+
+- Fundamentos de la plataforma Salesforce  
+- Fundamentos de Apex y .NET  
+- Modelado de datos  
+- Fundamentos y base de datos de Apex  
+- Desencadenadores de Apex  
+- Apex Integration Services  
+
+📌 Descripción:
+Estos módulos cubren conceptos clave como la estructura de datos en Salesforce, desarrollo en Apex, automatización mediante triggers y la integración con servicios externos.
+
+### 🔹 Evidencia
+
+<img src="assets/images/SalesForce_1.png" width="700"/>
+<img src="assets/images/AgentforceStudio_2.png" width="700"/>
+<img src="assets/images/AgentforceStudio_3.png" width="700"/>
+<img src="assets/images/SalesForce_fundamentoscompletos4.png" width="700"/>
+<img src="assets/images/SalesForce_Apex&NET5.png" width="700"/>
+<img src="assets/images/SalesForce_ApexClase6.png" width="700"/>
+<img src="assets/images/SalesForce_modelosdatos7.png" width="700"/>
+<img src="assets/images/SalesForce_fundamentosbasededatos8.png" width="700"/>
+<img src="assets/images/SalesForce_FundamentosbasededatosdeApex9.png" width="700"/>
+<img src="assets/images/SalesForce_insignias10.png" width="700"/>
+
+### 🔹 Perfil público
+
+📌 Se comparte el perfil público de Trailhead para validar el progreso:
+
+🔗 https://www.salesforce.com/trailblazer/vyg6rxoavlhws8s4wy
+
+### 📌 Conclusión
+
+El uso de Trailhead permitió adquirir conocimientos prácticos sobre Salesforce, incluyendo modelado de datos, desarrollo en Apex y consumo de servicios externos, sentando las bases para la construcción de soluciones empresariales escalables.

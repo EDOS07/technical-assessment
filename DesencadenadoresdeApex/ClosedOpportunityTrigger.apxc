@@ -1,0 +1,25 @@
+trigger ClosedOpportunityTrigger on Opportunity (after insert, after update) {
+    // 1. Creamos una lista para acumular todas las tareas que vamos a crear
+    List<Task> taskList = new List<Task>();
+    
+    // 2. Iteramos sobre todas las oportunidades del contexto actual (Trigger.new)
+    for (Opportunity opp : Trigger.new) {
+        
+        // 3. Verificamos la condición solicitada: Etapa 'Closed Won'
+        if (opp.StageName == 'Closed Won') {
+            
+            // 4. Creamos la instancia de la Tarea con los valores requeridos
+            Task t = new Task();
+            t.Subject = 'Follow Up Test Task';
+            t.WhatId = opp.Id; // Asociamos la tarea con la Oportunidad
+            
+            // 5. Agregamos la tarea a la lista (NO hacemos el insert aquí dentro)
+            taskList.add(t);
+        }
+    }
+    
+    // 6. Si la lista tiene elementos, realizamos una ÚNICA operación DML masiva
+    if (taskList.size() > 0) {
+        insert taskList;
+    }
+}

@@ -1,0 +1,23 @@
+public class AnimalLocator {
+    public static String getAnimalNameById(Integer id) {
+        Http http = new Http();
+        HttpRequest request = new HttpRequest();
+        // Construimos la URL dinámica con el ID
+        request.setEndpoint('https://th-apex-http-callout.herokuapp.com/animals/' + id);
+        request.setMethod('GET');
+        
+        HttpResponse response = http.send(request);
+        String animalName = '';
+        
+        // Verificamos si la respuesta es exitosa (200)
+        if (response.getStatusCode() == 200) {
+            // Deserializamos la respuesta JSON
+            Map<String, Object> results = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());
+            // El JSON tiene un objeto 'animal' y dentro la propiedad 'name'
+            Map<String, Object> animal = (Map<String, Object>) results.get('animal');
+            animalName = String.valueOf(animal.get('name'));
+        }
+        
+        return animalName;
+    }
+}

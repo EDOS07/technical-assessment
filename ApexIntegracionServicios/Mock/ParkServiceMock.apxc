@@ -1,0 +1,23 @@
+@isTest
+global class ParkServiceMock implements WebServiceMock {
+    global void doInvoke(
+           Object stub,
+           Object request,
+           Map<String, Object> response,
+           String endpoint,
+           String soapAction,
+           String requestName,
+           String responseNS,
+           String responseName,
+           String responseType) {
+        
+        // Creamos la respuesta que el WSDL espera (byCountryResponse)
+        ParkService.byCountryResponse response_x = new ParkService.byCountryResponse();
+        
+        // Definimos una lista de parques ficticios para el test
+        response_x.return_x = new List<String>{'Yosemite', 'Yellowstone', 'Zion'};
+        
+        // Añadimos la respuesta al mapa de salida
+        response.put('response_x', response_x);
+   }
+}

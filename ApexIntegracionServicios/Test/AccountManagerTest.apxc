@@ -1,0 +1,42 @@
+@IsTest
+private class AccountManagerTest {
+
+    @isTest
+    static void testGetAccount() {
+        // 1. Preparar datos de prueba
+        Id recordId = createTestRecord();
+        
+        // 2. Configurar la solicitud REST simulada
+        RestRequest request = new RestRequest();
+        request.requestUri = 'https://yourInstance.my.salesforce.com/services/apexrest/Accounts/' 
+            + recordId + '/contacts';
+        request.httpMethod = 'GET';
+        
+        // 3. Asignar la solicitud al contexto de Apex REST
+        RestContext.request = request;
+        
+        // 4. Ejecutar el método
+        Account thisAccount = AccountManager.getAccount();
+        
+        // 5. Verificar resultados
+        Assert.isTrue(thisAccount != null, 'Debería devolver una cuenta');
+        Assert.areEqual('Test Account', thisAccount.Name);
+        Assert.areEqual(1, thisAccount.Contacts.size(), 'Debería tener un contacto asociado');
+        Assert.areEqual('Test Contact', thisAccount.Contacts[0].Name);
+    }
+
+    // Método de ayuda para crear registros
+    static Id createTestRecord() {
+        Account accTest = new Account(Name='Test Account');
+        insert accTest;
+        
+        Contact conTest = new Contact(
+            FirstName='Test',
+            LastName='Contact',
+            AccountId=accTest.Id
+        );
+        insert conTest;
+        
+        return accTest.Id;
+    }
+}

@@ -1,0 +1,23 @@
+public class ContactAndLeadSearch {
+    
+    public static List<List<sObject>> searchContactsAndLeads(String searchParameter) {
+        
+        List<List<sObject>> searchList = [FIND :searchParameter IN ALL FIELDS 
+                                          RETURNING Contact(FirstName, LastName), 
+                                                    Lead(FirstName, LastName)];
+        
+        return searchList;
+    }
+}
+
+// Creamos un contacto y un candidato con el apellido Smith
+Contact c = new Contact(FirstName='John', LastName='Smith');
+insert c;
+
+Lead l = new Lead(FirstName='Jane', LastName='Smith', Company='Cloud Computing');
+insert l;
+List<List<sObject>> resultado = ContactAndLeadSearch.searchContactsAndLeads('Smith');
+
+System.debug('Listas devueltas: ' + resultado.size()); // Debería ser 2
+System.debug('Contactos: ' + resultado[0]);
+System.debug('Candidatos: ' + resultado[1]);

@@ -1,0 +1,16 @@
+@isTest
+private class ParkLocatorTest {
+    @isTest
+    static void testParkLocator() {
+        // 1. Indicar a Salesforce que use el Mock para la llamada SOAP
+        Test.setMock(WebServiceMock.class, new ParkServiceMock());
+        
+        // 2. Ejecutar el método que queremos probar
+        String country = 'United States';
+        List<String> result = ParkLocator.country(country);
+        
+        // 3. Verificar que los resultados coincidan con lo que definimos en el Mock
+        List<String> expectedParks = new List<String>{'Yosemite', 'Yellowstone', 'Zion'};
+        Assert.areEqual(expectedParks, result, 'La lista de parques devuelta no coincide con el Mock.');
+    }
+}
