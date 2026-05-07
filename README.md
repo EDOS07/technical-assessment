@@ -39,17 +39,8 @@ Para el desarrollo de esta evaluación se utilizarán estándares de codificaci�
   <img src="assets/images/first-commit.png" width="700"/>
   <img src="assets/images/GET.png" width="700"/>
   <img src="assets/images/POST.png" width="700"/>
-  <img src="assets/images/GET_NEW.png" width="700"/>
-  <img src="assets/images/SalesForce_1.png" width="700"/>
-<img src="assets/images/AgentforceStudio_2.png" width="700"/>
-<img src="assets/images/AgentforceStudio_3.png" width="700"/>
-<img src="assets/images/SalesForce_fundamentoscompletos4.png" width="700"/>
-<img src="assets/images/SalesForce_Apex&NET5.png" width="700"/>
-<img src="assets/images/SalesForce_ApexClase6.png" width="700"/>
-<img src="assets/images/SalesForce_modelosdatos7.png" width="700"/>
-<img src="assets/images/SalesForce_fundamentosbasededatos8.png" width="700"/>
-<img src="assets/images/SalesForce_FundamentosbasededatosdeApex9.png" width="700"/>
-<img src="assets/images/SalesForce_insignias10.png" width="700"/>
+  <img src="assets/images/GET_NEW.png" width="700"/>  
+  <img src="assets/images/SalesForce_insignias10.png" width="700"/>
 </p>
 
 ## 🛠️ Tecnologías y Herramientas
@@ -384,8 +375,176 @@ Estos módulos cubren conceptos clave como la estructura de datos en Salesforce,
 
 📌 Se comparte el perfil público de Trailhead para validar el progreso:
 
-🔗 https://www.salesforce.com/trailblazer/vyg6rxoavlhws8s4wy
+🔗 [Ver perfil público de Trailhead](https://www.salesforce.com/trailblazer/vyg6rxoavlhws8s4wy)
 
 ### 📌 Conclusión
 
-El uso de Trailhead permitió adquirir conocimientos prácticos sobre Salesforce, incluyendo modelado de datos, desarrollo en Apex y consumo de servicios externos, sentando las bases para la construcción de soluciones empresariales escalables.
+El uso de Trailhead permitió adquirir conocimientos prácticos sobre Salesforce, incluyendo modelado de datos, automatización mediante Apex y consumo de servicios REST.
+
+Además, los módulos completados proporcionaron una base sólida para comprender procesos empresariales, integración de sistemas y desarrollo sobre la plataforma Salesforce.
+
+## Ejercicio 5: Objetos estándar de Salesforce y relaciones
+
+### 🔹 Introducción
+
+Salesforce utiliza objetos estándar para modelar procesos de negocio relacionados con ventas, soporte y atención al cliente.
+
+Cada objeto almacena información específica y se relaciona con otros objetos para construir un ecosistema CRM integral.
+
+## 1. Lead
+
+### 📌 Descripción
+Representa un prospecto o posible cliente que todavía no ha sido calificado dentro del proceso comercial.
+
+### 📌 Datos que almacena
+- Nombre
+- Empresa
+- Correo electrónico
+- Teléfono
+- Estado
+- Fuente del Lead
+
+### 📌 Relaciones
+- Puede convertirse en:
+  - Account
+  - Contact
+  - Opportunity
+
+## 2. Account
+
+### 📌 Descripción
+Representa una empresa, organización o cliente con el que existe una relación comercial.
+
+### 📌 Datos que almacena
+- Nombre de la cuenta
+- Industria
+- Sitio web
+- Teléfono
+- Dirección
+- Tipo de cuenta
+
+### 📌 Relaciones
+- Tiene múltiples Contacts
+- Tiene múltiples Opportunities
+- Tiene múltiples Cases
+- Puede tener Assets
+
+## 3. Contact
+
+### 📌 Descripción
+Representa una persona asociada a una cuenta o empresa.
+
+### 📌 Datos que almacena
+- Nombre
+- Apellido
+- Email
+- Teléfono
+- Cargo
+
+### 📌 Relaciones
+- Pertenece a una Account
+- Puede estar relacionado con Opportunities
+- Puede generar Cases
+
+## 4. Opportunity
+
+### 📌 Descripción
+Representa una posible venta o negocio en proceso.
+
+### 📌 Datos que almacena
+- Nombre de oportunidad
+- Monto
+- Fecha de cierre
+- Etapa de venta
+- Probabilidad
+
+### 📌 Relaciones
+- Pertenece a una Account
+- Puede relacionarse con Contacts
+- Utiliza Products
+- Puede generar Quotes
+
+## 5. Product
+
+### 📌 Descripción
+Representa productos o servicios ofrecidos por la empresa.
+
+### 📌 Datos que almacena
+- Nombre del producto
+- Código
+- Precio
+- Descripción
+- Estado activo
+
+### 📌 Relaciones
+- Se relaciona con PriceBook
+- Puede estar en Opportunities
+- Puede estar en Quotes
+
+## 6. PriceBook
+
+### 📌 Descripción
+Contiene listas de precios para productos.
+
+### 📌 Datos que almacena
+- Nombre
+- Estado activo
+- Lista de productos y precios
+
+### 📌 Relaciones
+- Contiene múltiples Products
+- Se utiliza en Opportunities y Quotes
+
+## 7. Quote
+
+### 📌 Descripción
+Representa una cotización formal enviada a un cliente.
+
+### 📌 Datos que almacena
+- Número de cotización
+- Fecha
+- Estado
+- Total
+
+### 📌 Relaciones
+- Pertenece a una Opportunity
+- Incluye Products
+
+## 8. Asset
+
+### 📌 Descripción
+Representa productos que ya fueron vendidos o instalados para un cliente.
+
+### 📌 Datos que almacena
+- Nombre
+- Número de serie
+- Fecha de compra
+- Estado
+
+### 📌 Relaciones
+- Pertenece a una Account
+- Puede relacionarse con Products
+- Puede relacionarse con Cases
+
+## 9. Case
+
+### 📌 Descripción
+Representa una solicitud de soporte o incidencia reportada por un cliente.
+
+### 📌 Datos que almacena
+- Número de caso
+- Estado
+- Prioridad
+- Descripción
+- Origen
+
+### 📌 Relaciones
+- Pertenece a una Account
+- Puede relacionarse con Contact
+- Puede relacionarse con Asset
+- Puede utilizar Articles
+
+## 🔹 Diagrama UML
+
+El siguiente diagrama representa las relaciones principales entre los objetos estándar de Salesforce:
+<img src="assets/images/salesforce-uml.png" width="900"/>
